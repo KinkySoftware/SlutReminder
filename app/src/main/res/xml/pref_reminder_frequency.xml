@@ -1,0 +1,45 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="reminder_frequency_screen">
+
+        <ListPreference
+            android:defaultValue="180"
+            android:entries="@array/pref_reminder_frequency_titles"
+            android:entryValues="@array/pref_reminder_frequency_values"
+            android:key="reminder_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_reminder_frequency" />
+
+        <PreferenceCategory
+            android:key="pref_reminder_daily_category">
+            <Preference
+                android:key="pref_title_daily_options"
+                android:selectable="false"
+                android:title="Daily Options"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="pref_reminder_weekly_category">
+            <Preference
+                android:key="pref_title_weekly_options"
+                android:selectable="false"
+                android:title="Weekly Options"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="pref_reminder_monthly_category">
+            <Preference
+                android:key="pref_title_monthly_options"
+                android:selectable="false"
+                android:title="Monthly Options"/>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="pref_reminder_custom_category">
+            <Preference
+                android:key="pref_title_custom_options"
+                android:selectable="false"
+                android:title="Custom Options"/>
+        </PreferenceCategory>
+
+</PreferenceScreen>
